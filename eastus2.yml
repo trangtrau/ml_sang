@@ -32,7 +32,7 @@ jobs:
     code: 
       local_path: src/transform
     environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu:11
-    compute: azureml:NODE
+    compute: azureml:eastus2
     command: >-
       python transform.py 
       --clean_data ${{inputs.clean_data}} 
